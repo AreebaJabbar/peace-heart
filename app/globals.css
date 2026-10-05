@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0b3d78;
+  --navy-dark: #071f3d;
+  --red: #d72c2c;
+  --red-dark: #b82323;
+  --bg-light: #eef4fb;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-red {
+  background: var(--red) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap !important;
+  box-shadow: 0 4px 14px rgba(229, 36, 42, 0.28);
+}
+
+.btn-red:hover {
+  background: var(--red-dark) !important;
+  box-shadow: 0 6px 18px rgba(229, 36, 42, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-outline-white {
+  border: 2px solid #ffffff !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap !important;
+}
+
+.btn-outline-white:hover {
+  background: #ffffff !important;
+  color: var(--navy) !important;
+}
+
+.divider-heart::after {
+  content: "♥";
+  color: var(--red);
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider .line {
+  width: 40px;
+  height: 2px;
+  background: var(--red);
+}
+
+.nav-link {
+  position: relative;
+  white-space: nowrap !important;
+}
+
+.nav-link.active, .nav-link:hover {
+  color: var(--red) !important;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: var(--red);
+}
+
+.card-shadow {
+  box-shadow: 0 6px 24px rgba(11, 61, 120, 0.08);
+}
+
+.filter-btn {
+  white-space: nowrap !important;
+}
+
+.filter-btn.active {
+  background: var(--red) !important;
+  color: #fff !important;
+  border-color: var(--red) !important;
+}
+
+.btn-donate {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--red) !important;
+  color: white !important;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(226, 36, 44, 0.3);
+  transition: all 0.25s;
+  white-space: nowrap !important;
+}
+.btn-donate:hover {
+  background-color: var(--red-dark) !important;
+  transform: translateY(-2px);
+}
+
+.eyebrow {
+  color: var(--red);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.75rem;
+  white-space: nowrap !important;
+}

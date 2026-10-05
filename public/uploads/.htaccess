@@ -1,0 +1,8 @@
+# Security: never execute PHP (or any script) from inside the uploads folder,
+# even if someone manages to upload a disguised file.
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<FilesMatch "\.(php|phtml|php3|php4|php5|pl|py|cgi|asp|sh)$">
+    Require all denied
+</FilesMatch>
