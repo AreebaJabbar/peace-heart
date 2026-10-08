@@ -23,7 +23,7 @@ export default function AdminLayout({
         if (res.status === 401) {
           router.push('/admin/login');
         }
-      } catch (err) {}
+      } catch (err) { }
     };
     checkSession();
   }, [router]);
